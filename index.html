@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Generate a QR code image to point to a website URL"
+    />
+    <meta
+      name="keywords"
+      content="qr code, qr codes, qrcodes, create qr code, qr code generator, create qrcodes, make a qr code, online qr code"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <title>Free QR Code generator</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">QR Code Generator</div>
+    </header>
+    <main>
+      <div class="main-container">
+        <!--QR text and form container-->
+        <div class="text-container">
+          <!--QR text-->
+          <h1 class="title">QR Code Generator</h1>
+          <p class="title-info">
+            QR Codes allow smartphone users to access your website simply and
+            quickly.
+          </p>
+          <p class="title-info">
+            Enter your URL below to generate a QR Code and download the image.
+          </p>
+          <!--form -->
+          <form id="qr-form">
+            <input type="url" id="url" required class="url-input" />
+            <select name="size" id="size">
+              <option value="100">100x100</option>
+              <option value="200">200x200</option>
+              <option value="300" selected>300x300</option>
+              <option value="400">400x400</option>
+              <option value="500">500x500</option>
+              <option value="600">600x600</option>
+              <option value="700">700x700</option>
+            </select>
+            <button type="submit" class="generate-button">
+              Generate QR Code
+            </button>
+          </form>
+        </div>
+        <!--QR code illustration container-->
+        <div class="illustration-container">
+          <img src="image/qr-code.svg" alt="illustration of QR code " id="illustration" />
+        </div>
+      </div>
+      <div id="generate">
+           <!-- Spinner  -->
+           <div id="spinner">
+
+            <!-- <span class="sr-only">Loading...</span> -->
+          </div>
+          <div id="qrcode">
+            
+          </div>
+      </div>
+      
+    </main>
+
+    <!--javascript script link-->
+    <script src="index.js"></script>
+    <!--qrcode cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </body>
+</html>
