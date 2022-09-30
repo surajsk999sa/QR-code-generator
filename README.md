@@ -10,7 +10,7 @@
 - View each page and be able to toggle between the tabs to see new information
 
 ### Links
-- Live Space tourism web Site URL: (https://github.com/surajsk999sa/QR-code-generator/)
+- Live Space tourism web Site URL: (https://surajsk999sa.github.io/QR-code-generator/)
 
 ### Demo
 ![qr](https://user-images.githubusercontent.com/101207592/193169078-02ea5cd8-665a-4cdc-9ee9-9a4801a7f567.PNG)
